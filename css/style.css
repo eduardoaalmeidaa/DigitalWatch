@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background:#ffffff;
+    background:#a38e13;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +30,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #f70505;
-    background: rgb(1, 44, 100);
+    color: #1316db;
+    background: rgb(0, 0, 0);
     box-shadow: 5px 5px 15px rgb(59, 4, 4);
     border-radius: 7px;
     letter-spacing: 3px;
@@ -45,6 +45,7 @@ body {
 .relogio span.tempo {
     font-size: 30px;
     color: rgb(73, 2, 2);
+    margin: auto;
 }
 
 /* feito por Eduardo Andre Almeida
