@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Relógio Digital</title>
-
-    <style>
-        .relogio {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: 5rem;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        
-        .tempo {
-            font-size: 1.5rem;
-            color: #777;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="relogio">
-        <div id="horas">00</div>
-        <span class="tempo">Horas</span>
-    </div>
-    
-    <div class="relogio">
-        <div id="minutos">00</div>
-        <span class="tempo">Minutos</span>
-    </div>
-
-    <div class="relogio">
-        <div id="segundos">00</div>
-        <span class="tempo">Segundos</span>
-    </div>
-
-    <script>
-        function atualizarRelogio() {
-            var data = new Date();
-            
-            var horas = padZero(data.getHours());
-            var minutos = padZero(data.getMinutes());
-            var segundos = padZero(data.getSeconds());
-            
-            document.getElementById("horas").textContent = horas;
-            document.getElementById("minutos").textContent = minutos;
-            document.getElementById("segundos").textContent = segundos;
-        }
-        
-        function padZero(valor) {
-            return valor < 10 ? "0" + valor : valor;
-        }
-        
-        setInterval(atualizarRelogio, 1000);
-    </script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Relógio Digital</title>
+      <style>
+         .relogio {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         font-size: 5rem;
+         font-family: Arial, sans-serif;
+         color: #333;
+         }
+         .tempo {
+         font-size: 1.5rem;
+         color: #777;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="relogio">
+         <div id="horas">00</div>
+         <span class="tempo">Horas</span>
+      </div>
+      <div class="relogio">
+         <div id="minutos">00</div>
+         <span class="tempo">Minutos</span>
+      </div>
+      <div class="relogio">
+         <div id="segundos">00</div>
+         <span class="tempo">Segundos</span>
+      </div>
+      <script>
+         function atualizarRelogio() {
+             var data = new Date();
+             
+             var horas = padZero(data.getHours());
+             var minutos = padZero(data.getMinutes());
+             var segundos = padZero(data.getSeconds());
+             
+             document.getElementById("horas").textContent = horas;
+             document.getElementById("minutos").textContent = minutos;
+             document.getElementById("segundos").textContent = segundos;
+         }
+         
+         function padZero(valor) {
+             return valor < 10 ? "0" + valor : valor;
+         }
+         
+         setInterval(atualizarRelogio, 1000);
+      </script>
+   </body>
 </html>
-
 <!-- Feito por Eduardo Andre Almeida -->

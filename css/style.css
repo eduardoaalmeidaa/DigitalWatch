@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Open sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     height: 100vh;
-    background:#a38e13;
+    background: #080808;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,37 +16,64 @@ body {
 
 .relogio {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
-    height: 200px;
-    width: 500px;
+    height: 20vh; /* Diminuído */
+    width: 70vw; /* Diminuído */
+    max-width: 400px; /* Diminuído */
     background: transparent;
     border-radius: 3px;
+    flex-wrap: wrap;
 }
 
 .relogio div {
-    height: 170px;
-    width: 150px;
+    height: 18vh; /* Diminuído */
+    width: 30vw; /* Diminuído */
+    max-height: 120px; /* Diminuído */
+    max-width: 100px; /* Diminuído */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #1316db;
-    background: rgb(0, 0, 0);
-    box-shadow: 5px 5px 15px rgb(59, 4, 4);
+    color: #ffffff;
+    background: rgba(73, 236, 223, 0.76);
+    box-shadow: 5px 5px 15px rgb(75, 86, 148);
     border-radius: 7px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    margin: 5px;
 }
 
 .relogio span {
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 6vw; /* Diminuído */
+    max-font-size: 40px; /* Diminuído */
 }
 
 .relogio span.tempo {
-    font-size: 30px;
-    color: rgb(73, 2, 2);
+    font-size: 3vw; /* Diminuído */
+    max-font-size: 20px; /* Diminuído */
+    color: rgba(255, 255, 255, 0.685);
     margin: auto;
 }
 
-/* feito por Eduardo Andre Almeida
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .relogio {
+        flex-direction: column;
+        height: auto;
+        width: 80vw; /* Ajustado */
+    }
+
+    .relogio div {
+        width: 70vw; /* Ajustado */
+        height: auto;
+    }
+
+    .relogio span {
+        font-size: 10vw; /* Ajustado */
+    }
+
+    .relogio span.tempo {
+        font-size: 5vw; /* Ajustado */
+    }
+}
