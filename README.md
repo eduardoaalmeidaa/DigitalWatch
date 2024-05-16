@@ -6,4 +6,10 @@ Displays the current time in digital format, with hours, minutes and seconds.
 Automatically updates every second.
 
 ## Illustrative Picture
-![rg](https://github.com/eduardoaalmeidaa/Digital-Watch/assets/89856553/654e7423-d9ca-4ff6-a4ee-03edfb69c0a9)
+# WEB
+![image](https://github.com/eduardoaalmeidaa/Digital-Watch/assets/89856553/cb3c5bdf-b2ca-49c5-9be7-008250f2be63)
+
+# MOBILE
+![image](https://github.com/eduardoaalmeidaa/Digital-Watch/assets/89856553/6cac7b7b-ab2c-4e83-bea9-06f736830f50)
+
+
