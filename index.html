@@ -8,42 +8,57 @@
       <link rel="shortcut icon" href="./icones/relogio-digital.ico" type="image/x-icon">
       <link rel="stylesheet" href="css/style.css">
       <style>
-         .relogio {
+         body {
          display: flex;
          justify-content: center;
          align-items: center;
          height: 100vh;
-         font-size: 5rem;
+         margin: 0;
          font-family: Arial, sans-serif;
+         background-color: #000000;
+         }
+         .relogio-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         }
+         .relogio {
+         display: flex;
+         align-items: center;
+         font-size: 5rem;
          color: #333;
          }
          .tempo {
          font-size: 1.5rem;
          color: #777;
+         margin-left: 10px;
          }
       </style>
    </head>
    <body>
-      <div class="relogio">
-         <div id="horas">00</div>
-         <span class="tempo">Horas</span>
-      </div>
-      <div class="relogio">
-         <div id="minutos">00</div>
-         <span class="tempo">Minutos</span>
-      </div>
-      <div class="relogio">
-         <div id="segundos">00</div>
-         <span class="tempo">Segundos</span>
+      <div class="relogio-container">
+         <div class="relogio">
+            <div id="horas">00</div>
+            <span class="tempo">Horas</span>
+         </div>
+         <div class="relogio">
+            <div id="minutos">00</div>
+            <span class="tempo">Minutos</span>
+         </div>
+         <div class="relogio">
+            <div id="segundos">00</div>
+            <span class="tempo">Segundos</span>
+         </div>
       </div>
       <script>
          function atualizarRelogio() {
              var data = new Date();
-             
+         
              var horas = padZero(data.getHours());
              var minutos = padZero(data.getMinutes());
              var segundos = padZero(data.getSeconds());
-             
+         
              document.getElementById("horas").textContent = horas;
              document.getElementById("minutos").textContent = minutos;
              document.getElementById("segundos").textContent = segundos;
@@ -57,4 +72,3 @@
       </script>
    </body>
 </html>
-<!-- Feito por Eduardo Andre Almeida -->
