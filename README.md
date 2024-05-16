@@ -5,7 +5,7 @@ This is a simple digital clock project developed in Html-Css-JavaScript. It disp
 Displays the current time in digital format, with hours, minutes and seconds.
 Automatically updates every second.
 
-# Link to website: https://stately-gumption-0ca6d8.netlify.app/
+### Link to website: https://stately-gumption-0ca6d8.netlify.app/
 
 # WEB
 ![image](https://github.com/eduardoaalmeidaa/Digital-Watch/assets/89856553/cb3c5bdf-b2ca-49c5-9be7-008250f2be63)
